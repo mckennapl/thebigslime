@@ -34,6 +34,9 @@ surferpunk      = playlist("#{radio_path}/music/punk/surfer")
 # vinyl sets (usually 45-60 mins)
 mixtapes        = playlist("#{radio_path}/music/analogmixtapes/")
 
+# rotating daily mixes
+top40           = playlist("#{radio_path}/music/top40/")
+
 # art bell collections
 abdreamland     = playlist("#{radio_path}/shows/artbell/collection/dreamland/")
 abghosttoghost  = playlist("#{radio_path}/shows/artbell/collection/ghosttoghost/")
