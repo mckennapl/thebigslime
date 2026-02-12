@@ -10,7 +10,7 @@ default         = single("#{radio_path}/default.mp3")
 
 # country collections
 johnnycashradio = playlist("#{radio_path}/music/country/johnnycashradio")
-banjo-202602    = playlist("#{radio_path}/music/country/mountainbanjo-202602")
+banjo_202602    = playlist("#{radio_path}/music/country/mountainbanjo-202602")
 
 
 # funk collections
