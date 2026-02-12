@@ -3,7 +3,7 @@
 settings.init.allow_root.set(true)
 
 # remember to export radio_path var in .bashrc
-radio_path = getenv("RADIO_PATH")
+radio_path = getenv("RADIO_PATH") ?? "/radio/depot"
 
 # radio identification
 default         = single("#{radio_path}/default.mp3")
