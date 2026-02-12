@@ -3,7 +3,7 @@
 settings.init.allow_root.set(true)
 
 # remember to export radio_path var in .bashrc
-radio_path = getenv("RADIO_PATH") ?? "/radio/depot"
+radio_path = environment.get(default="/radio/depot", "RADIO_PATH")
 
 # radio identification
 default         = single("#{radio_path}/default.mp3")
@@ -54,7 +54,7 @@ abghosttoghost  = playlist("#{radio_path}/shows/artbell/collection/ghosttoghost/
 coasttocoast    = playlist("#{radio_path}/shows/artbell/collection/coasttocoast/")
 
 # playlist combos
-dinner          = random(weights=[2, 1], [croonerjazz, romanticjazz, cooking-202602])
+dinner          = random(weights=[2, 1], [croonerjazz, romanticjazz, cooking_202602])
 
 # bumpers
 bumpers         = playlist("#{radio_path}/bumpers")
