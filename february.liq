@@ -10,6 +10,7 @@ default         = single("#{radio_path}/default.mp3")
 
 # country collections
 johnnycashradio = playlist("#{radio_path}/music/country/johnnycashradio")
+banjo-202602    = playlist("#{radio_path}/music/country/mountainbanjo-202602")
 
 
 # funk collections
@@ -64,12 +65,12 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 5h-9h }, cozyjazz),
                            ({ 9h-12h }, alljazz),
                            ({ 12h-13h }, thebronx),
-                           ({ 13h-14h }, thebronx),
+                           ({ 13h-14h }, bayside),
                            ({ 14h-16h }, top40-202602),
-                           ({ 16h-17h }, surferpunk),
+                           ({ 16h-17h }, joyce),
                            ({ 17h-19h }, dinner),
-                           ({ 19h-21h }, funk),
-                           ({ 21h-24h }, organjazz)]),
+                           ({ 19h-21h }, johnnycashradio),
+                           ({ 21h-24h }, banjo-202602)]),
                    default])
 
 radio = random(weights = [1, 8],[bumpers, radio])
