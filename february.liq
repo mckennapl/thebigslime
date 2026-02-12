@@ -22,7 +22,7 @@ cozyjazz        = playlist("#{radio_path}/music/jazz/playlists/fireside")
 organjazz       = playlist("#{radio_path}/music/jazz/playlists/organ")
 romanticjazz    = playlist("#{radio_path}/music/jazz/playlists/romantic")
 croonerjazz     = playlist("#{radio_path}/music/jazz/playlists/crooner")
-cooking-202602  = playlist("#{radio_path}/music/jazz/playlists/jazzycooking-202602")
+cooking_202602  = playlist("#{radio_path}/music/jazz/playlists/jazzycooking-202602")
 
 # mariachi collections
 mariachi        = playlist("#{radio_path}/music/mariachi/classics")
@@ -39,13 +39,14 @@ stavvysworld    = playlist("#{radio_path}/shows/stavvysworld/")
 # punk collections
 surferpunk      = playlist("#{radio_path}/music/punk/surfer")
 bayside         = playlist("#{radio_path}/music/punk/bayside")
+joyce         = playlist("#{radio_path}/music/punk/joyce")
 
 # vinyl sets (usually 45-60 mins)
 mixtapes        = playlist("#{radio_path}/music/analogmixtapes/")
 
 # rotating daily mixes
-top40-202601    = playlist("#{radio_path}/music/top40/top40-202601")
-top40-202602    = playlist("#{radio_path}/music/top40/top40-202602")
+top40_202601    = playlist("#{radio_path}/music/top40/top40-202601")
+top40_202602    = playlist("#{radio_path}/music/top40/top40-202602")
 
 # art bell collections
 abdreamland     = playlist("#{radio_path}/shows/artbell/collection/dreamland/")
@@ -66,11 +67,11 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 9h-12h }, alljazz),
                            ({ 12h-13h }, thebronx),
                            ({ 13h-14h }, bayside),
-                           ({ 14h-16h }, top40-202602),
+                           ({ 14h-16h }, top40_202602),
                            ({ 16h-17h }, joyce),
                            ({ 17h-19h }, dinner),
                            ({ 19h-21h }, johnnycashradio),
-                           ({ 21h-24h }, banjo-202602)]),
+                           ({ 21h-24h }, banjo_202602)]),
                    default])
 
 radio = random(weights = [1, 8],[bumpers, radio])
