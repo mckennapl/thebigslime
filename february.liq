@@ -53,7 +53,7 @@ abghosttoghost  = playlist("#{radio_path}/shows/artbell/collection/ghosttoghost/
 coasttocoast    = playlist("#{radio_path}/shows/artbell/collection/coasttocoast/")
 
 # playlist combos
-dinner          = random(weights=[2, 1], [croonerjazz, romanticjazz])
+dinner          = random(weights=[2, 1], [croonerjazz, romanticjazz, cooking-202602])
 
 # bumpers
 bumpers         = playlist("#{radio_path}/bumpers")
