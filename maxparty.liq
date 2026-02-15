@@ -45,5 +45,5 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
 radio = random(weights = [1, 8],[bumpers, radio])
 radio = fallback(track_sensitive = false, [radio])
 radio = normalize(radio)
-
+radio = buffer(radio)
 output.alsa(id="alsa", mksafe(radio))
