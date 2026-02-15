@@ -12,7 +12,7 @@ default         = single("#{radio_path}/default.mp3")
 mixtapes        = playlist("#{radio_path}/music/analogmixtapes/")
 
 # decades
-80s_gems        = playlist("#{radio_path}/music/decades/80s/hiddengems-022026")
+gems_80s        = playlist("#{radio_path}/music/decades/80s/hiddengems-022026")
 
 # mariachi collections
 mariachi        = playlist("#{radio_path}/music/mariachi/classics")
@@ -32,9 +32,9 @@ mountainbanjo   = playlist("#{radio_path}/music/country/mountainbanjo-202602")
 radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 5h-10h }, organjazz),
                            ({ 10h-14h }, halloween),
-                           ({ 14h-16h }, 80s_gems),
+                           ({ 14h-16h }, gems_80s),
                            ({ 16h-17h }, westernswing),
-                           ({ 17h-21h }, bigband)
+                           ({ 17h-21h }, bigband),
                            ({ 21h-24h }, mountainbanjo)]),
                    default])
 
