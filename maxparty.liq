@@ -28,6 +28,10 @@ halloween       = playlist("#{radio_path}/music/holiday/halloween/kids")
 westernswing    = playlist("#{radio_path}/music/country/wswing_022026")
 mountainbanjo   = playlist("#{radio_path}/music/country/mountainbanjo-202602")
 
+# bumpers
+bumpers         = playlist("#{radio_path}/bumpers")
+bumpers         = amplify(2.0, bumpers)
+
 # schedule
 radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 5h-10h }, organjazz),
