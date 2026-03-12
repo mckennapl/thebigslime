@@ -70,8 +70,8 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 14h-16h }, top40_202602),
                            ({ 16h-17h }, joyce),
                            ({ 17h-19h }, dinner),
-                           ({ 19h-21h }, johnnycashradio),
-                           ({ 21h-24h }, banjo_202602)]),
+                           ({ 19h-21h }, banjo_202602),
+                           ({ 21h-24h }, johnnycashradio)]),
                    default])
 
 radio = random(weights = [1, 8],[bumpers, radio])
