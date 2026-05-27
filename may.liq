@@ -11,6 +11,7 @@ default         = single("#{radio_path}/default.mp3")
 # country collections
 johnnycashradio = playlist("#{radio_path}/music/country/johnnycashradio")
 banjo_202602    = playlist("#{radio_path}/music/country/mountainbanjo-202602")
+westernswing    = playlist("#{radio_path}/music/country/wswing_022026")
 
 # decades
 50son5          = playlist("#{radio_path}/music/50son5")
@@ -27,6 +28,7 @@ organjazz       = playlist("#{radio_path}/music/jazz/playlists/organ")
 romanticjazz    = playlist("#{radio_path}/music/jazz/playlists/romantic")
 croonerjazz     = playlist("#{radio_path}/music/jazz/playlists/crooner")
 cooking_202602  = playlist("#{radio_path}/music/jazz/playlists/jazzycooking-202602")
+bigband         = playlist("#{radio_path}/music/jazz/playlists/bigband-202602")
 
 # mariachi collections
 mariachi        = playlist("#{radio_path}/music/mariachi/classics")
@@ -72,11 +74,12 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 5h-9h }, cozyjazz),
                            ({ 9h-12h }, top40_202601),
                            ({ 12h-13h }, mariachi),
-                           ({ 13h-14h }, bayside),
+                           ({ 13h-14h }, wswing_022026),
                            ({ 14h-16h }, top40_202602),
                            ({ 16h-17h }, top40_202605),
                            ({ 17h-18h }, 50son5),
                            ({ 18h-19h }, 60son6),
+                           ({ 18h-19h }, bigband-202602),
                            ({ 19h-21h }, organjazz)
                            ({ 21h-24h }, gems_80s)]),
                    default])
