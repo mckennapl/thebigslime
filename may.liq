@@ -14,8 +14,8 @@ banjo_202602    = playlist("#{radio_path}/music/country/mountainbanjo-202602")
 westernswing    = playlist("#{radio_path}/music/country/wswing_022026")
 
 # decades
-50son5          = playlist("#{radio_path}/music/50son5")
-60son6          = playlist("#{radio_path}/music/60son6")
+fiftyon5          = playlist("#{radio_path}/music/50son5")
+sixtyon6          = playlist("#{radio_path}/music/60son6")
 gems_80s        = playlist("#{radio_path}/music/decades/80s/hiddengems-022026")
 
 # funk collections
@@ -77,8 +77,8 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 13h-14h }, wswing_022026),
                            ({ 14h-16h }, top40_202602),
                            ({ 16h-17h }, top40_202605),
-                           ({ 17h-18h }, 50son5),
-                           ({ 18h-19h }, 60son6),
+                           ({ 17h-18h }, fiftyon5),
+                           ({ 18h-19h }, sixtyon6),
                            ({ 19h-20h }, bigband),
                            ({ 20h-21h }, organjazz),
                            ({ 21h-24h }, gems_80s)]),
