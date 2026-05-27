@@ -79,7 +79,7 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 16h-17h }, top40_202605),
                            ({ 17h-18h }, 50son5),
                            ({ 18h-19h }, 60son6),
-                           ({ 18h-19h }, bigband-202602),
+                           ({ 18h-19h }, bigband),
                            ({ 19h-21h }, organjazz)
                            ({ 21h-24h }, gems_80s)]),
                    default])
