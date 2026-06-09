@@ -6,7 +6,7 @@ settings.init.allow_root.set(true)
 radio_path = getenv("RADIO_PATH")
 
 # news
-news            = playlist(reload=60, reload_mode="watch", "#{radio_path}/news/current.mp3")
+news            = playlist(reload=60, reload_mode="watch", "#{radio_path}/news/current")
 
 # radio identification
 default         = single("#{radio_path}/default.mp3")
