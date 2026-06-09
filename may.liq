@@ -5,6 +5,9 @@ settings.init.allow_root.set(true)
 # remember to export radio_path var in .bashrc
 radio_path = getenv("RADIO_PATH")
 
+# news
+news            = single(reload=true, "/radio/depot/news/current.mp3")
+
 # radio identification
 default         = single("#{radio_path}/default.mp3")
 
@@ -76,10 +79,14 @@ radio = fallback([  switch([({ 0h-5h }, mixtapes),
                            ({ 12h-13h }, mariachi),
                            ({ 13h-14h }, westernswing),
                            ({ 14h-16h }, top40_202602),
-                           ({ 16h-17h }, top40_202605),
-                           ({ 17h-18h }, fiftyon5),
-                           ({ 18h-19h }, sixtyon6),
-                           ({ 19h-20h }, bigband),
+                           ({ 16h-16h5m }, news),
+                           ({ 16h5m-17h }, top40_202605),
+                           ({ 17h-17h5m }, news),
+                           ({ 17h5m-18h }, fiftyon5),
+                           ({ 18h-18h5m }, news),
+                           ({ 18h5m-19h }, sixtyon6),
+                           ({ 19h-19h5m }, news),
+                           ({ 19h5m-20h }, bigband),
                            ({ 20h-21h }, organjazz),
                            ({ 21h-24h }, gems_80s)]),
                    default])
