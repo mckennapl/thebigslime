@@ -1,6 +1,6 @@
 # THE BIG SLIME FM
 
-Welcome to THE BIG SLIME. A terrestrial radio station located somewhere in Kent County, Michigan.
+Welcome to THE BIG SLIME. A terrestrial radio station located somewhere in Kent County, Michigan...
 
 IT'S BEEN UPGRADED! We're now running bare-metal, hooked up to a 15w FM transmitter.
 
